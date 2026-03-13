@@ -33,7 +33,26 @@
             /** #0000ff **/
             /** #0000FFAA **/
 
+            #card{
+                border: 1xp solid black;
+                box-shadow: 10xp 2xp gray;
+                display:  inline-block;
+            }
+            #card h2{
+                display: inline-block;
+            }
+            #card #pokemon{
+                width: 50px;;
+            }
+            #card #cachorro{
+                width: 300px;
+                display: block;
+                margin: 10px;
+            }
+
         </style>
+
+        
         <!--isso é um comentario em HTML-->
     </head>  
         <body> 
@@ -77,7 +96,7 @@
             
             </pre>
             
-            <hr
+            <hr>
             <p> Lista de Compras para o churrasco </p>
             <ul>
             <li> Energetico</li>
@@ -200,8 +219,79 @@
             
             </table>
 
-            
+            <h1>Container</h1>
+        <div id = "card"> 
+            <img id = "cachorro" src="cachorrinho.jpg" alt="">
+            <h2> Dale</h2>
+            <img id="pokemon"src="./download.jpg" alt="">
 
+
+
+
+
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Saving</th>    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Janeiro</td>
+                    <td>R$ 100</td>
+                </tr>
+            </tbody>
+            <tr>
+                <td>Fevereiro</td>
+                <td>R$ 200</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>R$ 300</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br>
+        <hr>
+        <br>
+        <h2> Formularios e Inputs</h2>
+        <a href=""></a>
+        <form action=" ">
+
+            <h2 id="ExemploForm"> Exemplo</h2>
+            <form action="">
+
+            <label for="nome"> Informe seu nome feio</label><br>
+            <input id=""type="text"><br><br>
+            
+            <input type="color"><br><br>
+            <input type="date"><br><br>
+            <input type="datetime"><br><br>
+            <input type="file"><br><br>
+            <input  type="number"><br><br>
+            <input type="checkbox" name="" id=""><br><br>
+            <input type="radio" name="" id=""><br><br>
+            <input type="range"><br><br>
+
+            <input type="submit" value="submit">
+            <button>Pesquisa</button>
+            </form>
+            <button> Botão</button>
+
+            <form action="https://google.com/search" method="post">
+
+                <label for="chave"> Informe sua busca</label>
+               <input type="text" name="q" id="chave">
+                <input type="submit" value="pesquisa">
+
+
+        </form>
+            
+            
         
         
         
