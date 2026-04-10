@@ -28,6 +28,7 @@
             background-color: red;
             top: 0px;
             left: 0px;
+            animation: rotacao  2s linear 0s infinite;
         }
 
         #box2 { 
@@ -35,25 +36,34 @@
             top: 0px;
             right: 0px;
             color: black;
+            animation: rotacao  2s linear 0s infinite;
         }
 
         #box3 { 
             background-color: green;
             bottom: 0px;
             right: 0px;
+            animation: rotacao  2s linear 0s infinite;
         }
 
         #box4 { 
             background-color: palevioletred;
             bottom: 0px;
             left: 0px;
+            animation: rotacao  2s linear 0s infinite;
         }
-
         #box5 { 
             background-color: blue;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            animation: rotacao  2s linear 0s infinite;
+        }
+
+        @keyframes rotacao {
+            0%{}
+            100%{transform: rotate(360deg);}
+            
         }
     </style>
 </head>
