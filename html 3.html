@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Bandeiras com Grid</title>
+
+<style>
+
+/* Alemanha (3 faixas horizontais) */
+.bandeira-alemanha {
+  width: 300px;
+  height: 200px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr; /* 3 linhas iguais */
+  border: 1px solid #ccc;
+}
+
+.alemanha-preta {
+  background-color: black;
+}
+
+.alemanha-vermelha {
+  background-color: #dd0000;
+}
+
+.alemanha-dourada {
+  background-color: #ffcc00;
+}
+
+/* França (3 faixas verticais) */
+.bandeira-franca {
+  width: 300px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 colunas iguais */
+  border: 1px solid #ccc;
+}
+
+.franca-azul {
+  background-color: #0055A4;
+}
+
+.franca-branca {
+  background-color: white;
+}
+
+.franca-vermelha {
+  background-color: #EF4135;
+}
+
+/* Japão (círculo central) */
+.bandeira-japao {
+  width: 300px;
+  height: 200px;
+  display: grid;
+  place-items: center; /* centraliza no grid */
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.japao-circulo {
+  width: 100px;
+  height: 100px;
+  background-color: #BC002D;
+  border-radius: 50%;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2>Alemanha</h2>
+<div class="bandeira-alemanha">
+  <div class="alemanha-preta"></div>
+  <div class="alemanha-vermelha"></div>
+  <div class="alemanha-dourada"></div>
+</div>
+
+<h2>França</h2>
+<div class="bandeira-franca">
+  <div class="franca-azul"></div>
+  <div class="franca-branca"></div>
+  <div class="franca-vermelha"></div>
+</div>
+
+<h2>Japão</h2>
+<div class="bandeira-japao">
+  <div class="japao-circulo"></div>
+</div>
+
+</body>
+</html>
