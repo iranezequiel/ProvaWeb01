@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Exemplo CSS</title>
+
+<style>
+
+/* Regra CSS básica */
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Pseudo-classe (:hover) */
+button:hover {
+  animation: mudarCor 0.5s forwards;
+}
+
+/* Pseudo-elemento (::before) */
+button::before {
+  content: "👉 ";
+}
+
+/* Animação */
+@keyframes mudarCor {
+  from {
+    background-color: blue;
+  }
+  to {
+    background-color: red;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Exemplo de CSS</h1>
+</header>
+
+<main>
+  <button>Clique aqui</button>
+</main>
+
+<footer>
+  <p>Rodapé</p>
+</footer>
+
+</body>
+</html>
